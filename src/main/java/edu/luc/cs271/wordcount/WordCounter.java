@@ -13,8 +13,9 @@ public class WordCounter {
   /** Creates a word counter instance based on the given map. */
   public WordCounter(final Map<String, Integer> theMap) {
 
-    // TODO
-    this.theMap = null;
+    // DONE
+    this.theMap = theMap;
+    //this.theMap = null;
 
   }
 
