@@ -27,7 +27,6 @@ public class TestWordCounter {
 
     // TODO verify that the SUT initially returns an empty map
     fail();
-
   }
 
   @Test
@@ -37,6 +36,5 @@ public class TestWordCounter {
     // then use assertions to verify the correct counts
     // do this for at least two words in the iterator and two not in the iterator
     fail();
-
   }
 }
