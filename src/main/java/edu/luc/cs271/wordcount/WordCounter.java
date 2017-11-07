@@ -37,7 +37,7 @@ public class WordCounter {
     // DONE
     int numCount = theMap.get(word);
     return numCount;
-    //return -1;
+   
   }
 
   /** Retrieve the map representing all word frequencies. */
