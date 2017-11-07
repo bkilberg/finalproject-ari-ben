@@ -24,10 +24,22 @@ public class WordCounter {
   /** Counts the frequencies of all words in the given iterator. */
   public void countWords(final Iterator<String> words) {
 
-    // TODO for each word in the iterator, update the corresponding frequency in the map
+    // DONE for each word in the iterator, update the corresponding frequency in the map
     // HINT to do this without a conditional, use the getOrDefault method
     // while(words.hasNext()) - need correct conditional... while? for?
-    theMap.getOrDefault(words, getCount(words));
+    //theMap.getOrDefault(words, getCount(words));
+    int count = 0;
+    
+    while (words.hasNext()) {
+      String temp = words.next();
+      if (theMap.containsKey(temp)) {
+        count = theMap.get(temp);
+        theMap.put(temp, count ++);
+      }
+      else {
+        theMap.put(temp, 1);
+      }
+    }
   }
 
   /** Retrieve the frequency of a particular word. */
