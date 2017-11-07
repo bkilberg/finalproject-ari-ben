@@ -31,7 +31,7 @@ public class Main {
     
     Collections.sort(mEntries, new DescendingByCount());
     
-    if (wCount.getCount().size() <= 10) {
+    if (wCount.getCounts().size() <= 10) {
       for (int i =0; i < wCount.getCounts().size(); i++) {
         System.out.println(mEntries.get(i));
       }
