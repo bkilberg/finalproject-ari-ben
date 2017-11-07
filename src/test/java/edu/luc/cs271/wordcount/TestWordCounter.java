@@ -11,6 +11,9 @@ public class TestWordCounter {
   // TODO complete this test class
 
   // TODO declare a reference to the SUT (system under test), i.e., WordCounter
+      private WordCounter Count;
+      
+
 
   @Before
   public void setUp() {
@@ -19,7 +22,8 @@ public class TestWordCounter {
 
   @After
   public void tearDown() {
-    // TODO set the SUT instance to null
+    // Done set the SUT instance to null
+        Count = null;
   }
 
   @Test
