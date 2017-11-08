@@ -20,7 +20,7 @@ public class Main {
     // 7. print the (up to) ten most frequent words in the text
 
     Map<String, Integer> data = new HashMap<String, Integer>();
-    
+
     WordCounter wCount = new WordCounter(data);
     wCount.countWords(input);
     
@@ -37,6 +37,7 @@ public class Main {
       }
     }
     else {
+
       for (int i = 0; i < wCount.getCounts().size(); i++) {
         System.out.println(mEntries.get(i));
       }
