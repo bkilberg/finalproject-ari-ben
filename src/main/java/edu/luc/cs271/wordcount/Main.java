@@ -23,20 +23,19 @@ public class Main {
 
     WordCounter wCount = new WordCounter(data);
     wCount.countWords(input);
-    
+
     int size = wCount.getCounts().size(); // 3
-    
+
     List<Map.Entry<String, Integer>> mEntries = new ArrayList<>(size);
-    mEntries.addAll(wCount.getCounts().entrySet()); //5
-    
+    mEntries.addAll(wCount.getCounts().entrySet()); // 5
+
     Collections.sort(mEntries, new DescendingByCount());
-    
+
     if (wCount.getCounts().size() <= 10) {
-      for (int i =0; i < wCount.getCounts().size(); i++) {
+      for (int i = 0; i < wCount.getCounts().size(); i++) {
         System.out.println(mEntries.get(i));
       }
-    }
-    else {
+    } else {
 
       for (int i = 0; i < wCount.getCounts().size(); i++) {
         System.out.println(mEntries.get(i));

@@ -45,7 +45,7 @@ public class TestWordCounter {
 
     assertEquals(counter.getCount("data"), 1);
     assertEquals(counter.getCount("Ben"), 1);
-    // assertEquals(counter.getCount("heart"), 0);need to work on this
-    // assertNotEquals(counter.getCount("success"), 3);need to work on this
+    assertNotEquals(counter.getCount("heart"), -1); // need to work on this
+    assertNotEquals(counter.getCount("success"), 3); // need to work on this
   }
 }
