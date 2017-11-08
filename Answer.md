@@ -1,9 +1,11 @@
- The tests take a longer time to complete with a TreeMap than with a HashMap.
+ Yes, it makes a difference.The tests take a longer time to complete with a TreeMap than with a HashMap.
  
- All the string iterators will be placed in the same map and list
+ When i invoke countWords multiple times for different String iterators, 
+ all the string iterators will be placed in the same map and list.
  
- The iterator allows for entries to be added to the map so that it's not empty, 
- and thus non-testable.
+ 
+ The Iterator abstraction allows the addition of entries to the map 
+ by making WordCounter testable
  
  
  the top ten words are
