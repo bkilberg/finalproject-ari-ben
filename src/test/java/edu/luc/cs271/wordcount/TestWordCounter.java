@@ -9,14 +9,14 @@ import org.junit.Test;
 
 public class TestWordCounter {
 
-  // TODO complete this test class
+  // Done complete this test class
 
-  // TODO declare a reference to the SUT (system under test), i.e., WordCounter
+  // Done declare a reference to the SUT (system under test), i.e., WordCounter
   WordCounter counter;
 
   @Before
   public void setUp() {
-    // TODO create the SUT instance
+    // Done create the SUT instance
     Map<String, Integer> map = new HashMap<String, Integer>();
     counter = new WordCounter(map);
   }
@@ -30,14 +30,14 @@ public class TestWordCounter {
   @Test
   public void testGetCountEmpty() {
 
-    // TODO verify that the SUT initially returns an empty map
+    // Done verify that the SUT initially returns an empty map
     assertTrue(counter.getCounts().isEmpty());
   }
 
   @Test
   public void testGetCountNonEmpty() {
 
-    // TODO run the SUT on a specific String iterator with some repeated words,
+    // Done run the SUT on a specific String iterator with some repeated words,
     // then use assertions to verify the correct counts
     // do this for at least two words in the iterator and two not in the iterator
 
