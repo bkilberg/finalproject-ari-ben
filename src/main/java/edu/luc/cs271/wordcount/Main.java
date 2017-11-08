@@ -19,5 +19,26 @@ public class Main {
     //    using Arrays.sort and an instance of the provided comparator (after fixing the latter)
     // 7. print the (up to) ten most frequent words in the text
 
+    Map<String, Integer> data = new HashMap<String, Integer>();
+
+    WordCounter wCount = new WordCounter(data);
+    wCount.countWords(input);
+
+    int size = wCount.getCounts().size(); // 3
+
+    List<Map.Entry<String, Integer>> mEntries = new ArrayList<>(size);
+    mEntries.addAll(wCount.getCounts().entrySet()); // 5
+
+    Collections.sort(mEntries, new DescendingByCount());
+
+    if (wCount.getCounts().size() <= 10) {
+      for (int i = 0; i < wCount.getCounts().size(); i++) {
+        System.out.println(mEntries.get(i));
+      }
+    } else {
+      for (int i = 0; i < wCount.getCounts().size(); i++) {
+        System.out.println(mEntries.get(i));
+      }
+    }
   }
 }
