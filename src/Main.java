@@ -6,6 +6,7 @@ public class Main {
   static Puzzle puzzle;
 
   public static void main(String[] args) {
+    // Create a jframe
     frame = new JFrame("Puzzlegame");
     frame.setSize(327, 327);
 
