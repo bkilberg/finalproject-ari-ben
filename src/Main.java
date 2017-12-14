@@ -1,3 +1,5 @@
+
+
 import java.awt.event.*;
 import javax.swing.*;
 
@@ -10,7 +12,7 @@ public class Main {
     frame = new JFrame("Puzzlegame");
     frame.setSize(327, 327);
 
-    puzzle = new Puzzle(new ImageIcon(Main.class.getResource("/Image.png")).getImage());
+    puzzle = new Puzzle(new ImageIcon(Main.class.getResource("picture 2.png")).getImage());
 
     frame.add(puzzle);
 
